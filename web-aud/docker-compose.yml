@@ -1,0 +1,11 @@
+version: "3"
+services:
+  wp-db:
+    image: "postgres"
+    container_name: "wp2024_eshop"
+    environment:
+     - POSTGRES_USER=postgres
+     - POSTGRES_PASSWORD=wp2024
+     - POSTGRES_DB=postgres
+    ports:
+      - "5000:5000"
